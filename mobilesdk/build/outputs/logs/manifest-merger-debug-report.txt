@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+	package
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:2:5-33
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:1-14:12
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:5:22-62
+application
+ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:7:5-12:19
+	android:usesCleartextTraffic
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:8:9-44
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:9:9-11:35
+	android:value
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:11:13-32
+	android:name
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml:10:13-70
+uses-sdk
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		ADDED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/iteach/Desktop/ProjectsAndroid/Virtualdars/mobilesdk/src/main/AndroidManifest.xml

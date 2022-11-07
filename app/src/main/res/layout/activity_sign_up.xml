@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="ScrollViewSize,UselessParent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/logo_circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onlinedars Ro'yxatdan o'tish"
+                android:textSize="20sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="#202E3E"
+                android:fontFamily="@font/google_sans_medium"/>
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/input_edit_text"
+                android:drawableStart="@drawable/name_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Ismni kiriting"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/input_edit_text"
+                android:drawableStart="@drawable/name_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Familyani kiriting"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/etTel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/input_edit_text"
+                android:drawableStart="@drawable/phone_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:text="+998"
+                android:hint="Telefon nomerni kiriting"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/input_edit_text"
+                android:drawableStart="@drawable/lock_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Parolni kiriting"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:text="Ro'yxatdan o'tish"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/google_sans_bold"
+                android:background="@drawable/submit_button"
+                tools:ignore="HardcodedText"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"/>
+
+</RelativeLayout>

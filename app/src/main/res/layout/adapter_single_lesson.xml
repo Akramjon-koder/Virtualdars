@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="?selectableItemBackground"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvLessonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_medium"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvLessonNumber"
+            android:layout_toStartOf="@id/ivClose"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/google_sans_medium"
+                android:text="You will be able to illustrate your cv"
+                android:textColor="#555"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lessonIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivVideoPlaying"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_pause_circle_outline_24"
+                        android:layout_marginTop="1dp"
+                        android:visibility="gone"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageView
+                        android:id="@+id/ivVideo"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/play_icon"
+                        android:layout_marginTop="1dp"
+                        android:visibility="gone"
+                        android:scaleType="fitCenter"/>
+                    <ImageView
+                        android:id="@+id/ivQuiz"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/quiz_icon"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/ivTask"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attachment_icon"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    android:text="Video" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_baseline_lock_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#ddd"
+        android:layout_below="@id/relativeLayout"/>
+
+</RelativeLayout>

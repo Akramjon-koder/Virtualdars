@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="16dp"
+    app:cardBackgroundColor="#FEFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rlLessonIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/ivVideo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/play_icon"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/ivQuiz"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/quiz_icon"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/ivTask"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/attachment_icon"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_toEndOf="@id/rlLessonIcon"
+        android:layout_toStartOf="@id/ivVideoOpen"
+        android:fontFamily="@font/google_sans_regular"
+        android:text="You will be able to illusjks jsdskj jksdnsj kjdjks kjcbkcj jbkabc"
+        android:textColor="#5594BE"/>
+
+    <ImageView
+        android:id="@+id/ivVideoOpen"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSignPlaceholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/do_login"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Kirish"
+        android:layout_below="@id/ivImage"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/google_sans_bold"
+        android:background="@drawable/submit_button"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

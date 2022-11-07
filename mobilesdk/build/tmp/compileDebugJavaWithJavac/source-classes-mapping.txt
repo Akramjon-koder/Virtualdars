@@ -1,0 +1,2 @@
+uz/click/mobilesdk/BuildConfig.java
+ uz.click.mobilesdk.BuildConfig

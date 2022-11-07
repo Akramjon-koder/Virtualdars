@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemLogin"
+        android:title="@string/login" />
+    <item
+        android:id="@+id/itemSign"
+        android:title="@string/sign_up" />
+    <item
+        android:id="@+id/itemProfile"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/itemExit"
+        android:title="@string/exit" />
+    <item
+        android:id="@+id/itemSearch"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom"/>
+</menu>

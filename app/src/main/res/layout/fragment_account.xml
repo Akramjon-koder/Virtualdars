@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AccountFragment">
+
+    <include layout="@layout/toolbar_fragment"
+        android:id="@+id/toolbar"/>
+
+    <include layout="@layout/sign_placeholder"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/placeholder"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/google_sans_bold"
+            android:textSize="16sp"
+            android:textColor="#253241" />
+
+        <TextView
+            android:id="@+id/accountPageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:fontFamily="@font/google_sans_medium"
+            android:textColor="#202E3E"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            android:text="Profil oynasi" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_alignParentStart="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/accountPageTitle"
+            android:background="@color/white"
+            android:layout_marginHorizontal="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/editProfileIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/bluish_user"
+                        android:layout_centerVertical="true"
+                        app:civ_circle_background_color="#E3EBFE"/>
+
+                    <ImageView
+                        android:id="@+id/editProfileArrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/tvEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@id/editProfileArrow"
+                        android:layout_toEndOf="@id/editProfileIcon"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:text="Profilni o'zgartirish"
+                        android:textColor="#253241"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D9DEE1"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/changePasswordIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/bluish_key"
+                        android:layout_centerVertical="true"
+                        app:civ_circle_background_color="#E3EBFE"/>
+
+                    <ImageView
+                        android:id="@+id/changePasswordArrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/tvChangePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@id/changePasswordArrow"
+                        android:layout_toEndOf="@id/changePasswordIcon"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:text="Parolni almashtirish"
+                        android:textColor="#253241"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D9DEE1"
+                    android:layout_marginBottom="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/logOutIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/bluish_logout"
+                        android:layout_centerVertical="true"
+                        app:civ_circle_background_color="#E3EBFE"/>
+
+                    <ImageView
+                        android:id="@+id/logOutArrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/tvLogOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_toStartOf="@id/logOutArrow"
+                        android:layout_toEndOf="@id/logOutIcon"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:text="Profildan chiqish"
+                        android:textColor="#253241"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
